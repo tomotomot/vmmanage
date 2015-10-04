@@ -1,0 +1,37 @@
+<h1>Vms#index</h1>
+<p>Find me in app/views/vms/index.html.erb</p>
+
+<table class="table  table-condensed table-striped table-bordered table-hover">
+
+<thead>         
+  <th>名前</th><th>IP</th><th>操作</th><th>主な利用者</th>
+</thead>
+
+<% @vms.each do |vm| %>
+
+
+<tr>
+  <td><%= vm.title %></td>
+  <td><%= vm.ip %></td>
+  <td><%= vm.users %></td>
+
+
+  <td><%= link_to "[EDIT]", edit_vm_path(vm.id)  %>
+  <%= link_to "[DELETE]", vm_path(vm.id), method: :delete, data: { confirm: "削除しますか？"} %></td>
+
+
+
+</tr>
+<% end %>
+
+
+
+</table>
+
+<%= will_paginate @vms, previous_label: '＜前ページ', next_label:  '次ページ＞'  %>
+
+<hr>
+新規レコード作成
+<%= link_to "NEW" ,new_vm_path  %>
+
+
