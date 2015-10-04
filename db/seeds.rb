@@ -8,16 +8,16 @@
 #
 
 @vm = Vm.new
-@vm.title = "funky802.vmware"
+@vm.title = "test.vmware"
 @vm.ip    = "192.168.200.107"
-@vm.users = "nitta,ogino"
+@vm.users = "tanaka"
 
 @vm.save
 
 @vm = Vm.new
-@vm.title = "cocolo.vmware"
+@vm.title = "test2.vmware"
 @vm.ip    = "192.168.200.109"
-@vm.users = "nitta,yamamura"
+@vm.users = "yamada"
 @vm.save
                                                                                                                                                                                   
        
