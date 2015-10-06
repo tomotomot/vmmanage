@@ -17,9 +17,9 @@
 
 
   <td>
-<%= link_to "[DETAIL]", vm_path(vm.id)  %>
-<%= link_to "[EDIT]", edit_vm_path(vm.id)  %>
-  <%= link_to "[DELETE]", vm_path(vm.id), method: :delete, data: { confirm: "削除しますか？"} %></td>
+<%= link_to "DETAIL", vm_path(vm.id),class: "btn btn-mini btn-primary"  %>
+<%= link_to "EDIT", edit_vm_path(vm.id),class: "btn btn-mini btn-warning"  %>
+  <%= link_to "DELETE", vm_path(vm.id), method: :delete, data: { confirm: "削除しますか？"},class: "btn btn-mini btn-danger" %></td>
 
 
 
