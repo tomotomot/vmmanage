@@ -4,7 +4,7 @@
 <table class="table  table-condensed table-striped table-bordered table-hover">
 
 <thead>         
-  <th>名前</th><th>IP</th><th>主な利用者</th><th>操作</th>
+  <th>ドメイン</th><th>IP</th><th>主な利用者</th><th>操作</th>
 </thead>
 
 <% @vms.each do |vm| %>
@@ -26,14 +26,8 @@
 </tr>
 <% end %>
 
-
-
 </table>
 
 <%= will_paginate @vms, previous_label: '＜前ページ', next_label:  '次ページ＞'  %>
-
-<hr>
-新規レコード作成
-<%= link_to "NEW" ,new_vm_path  %>
 
 
