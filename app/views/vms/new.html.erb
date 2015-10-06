@@ -17,6 +17,11 @@
   <%= f.text_field :users %><br>
 <%= @vm.errors.messages[:users][0] %>  
 <br>
+  <%= f.label :memo %>
+  <%= f.text_area :memo %>
+<%= @vm.errors.messages[:memo][0] %>
+
+<br>
   <%= f.submit %>
 <% end %>
 

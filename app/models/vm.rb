@@ -12,5 +12,10 @@ class Vm < ActiveRecord::Base
     #length: { minimum: 3, message: "短すぎ！" },
     format: { with: VALID_IP, message: "IPの書式が不正です。" }
 
+    validates :memo,
+    length: { maximum: 200, message: "200字以内で入力して下さい。" }
+
+
+
 
 end

@@ -34,6 +34,7 @@ class VmsController < ApplicationController
     #@vm.title = params[:vm][:title]
     #@vm.ip    = params[:vm][:ip]
     #@vm.users = params[:vm][:users]
+
     if @vm.save
       redirect_to vms_path
     else
@@ -50,7 +51,7 @@ class VmsController < ApplicationController
 
   private
     def vm_params
-      params[:vm].permit(:title, :users, :ip)
+      params[:vm].permit(:title, :users, :ip, :memo)
     end
 
 end

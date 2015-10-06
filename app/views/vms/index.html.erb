@@ -4,7 +4,7 @@
 <table class="table  table-condensed table-striped table-bordered table-hover">
 
 <thead>         
-  <th>名前</th><th>IP</th><th>操作</th><th>主な利用者</th>
+  <th>名前</th><th>IP</th><th>主な利用者</th><th>操作</th>
 </thead>
 
 <% @vms.each do |vm| %>
@@ -16,7 +16,9 @@
   <td><%= vm.users %></td>
 
 
-  <td><%= link_to "[EDIT]", edit_vm_path(vm.id)  %>
+  <td>
+<%= link_to "[DETAIL]", vm_path(vm.id)  %>
+<%= link_to "[EDIT]", edit_vm_path(vm.id)  %>
   <%= link_to "[DELETE]", vm_path(vm.id), method: :delete, data: { confirm: "削除しますか？"} %></td>
 
 
