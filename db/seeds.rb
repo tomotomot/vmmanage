@@ -20,6 +20,48 @@
 @vm.users = "yamada"
 @vm.save
                                                                                                                                                                                   
+
+@vm = Vm.new
+@vm.title = "abc.vmware"
+@vm.ip    = "192.168.200.1"
+@vm.users = "tanaka"
+
+@vm.save
+
+@vm = Vm.new
+@vm.title = "a123.vmware"
+@vm.ip    = "192.168.200.2"
+@vm.users = "yamada"
+@vm.save
+
+
+@vm = Vm.new
+@vm.title = "b2.vmware"
+@vm.ip    = "192.168.200.5"
+@vm.users = "tanaka"
+
+@vm.save
+
+@vm = Vm.new
+@vm.title = "c142.vmware"
+@vm.ip    = "192.168.200.61"
+@vm.users = "yamada"
+@vm.save
+
+
+
+@vm = Vm.new
+@vm.title = "d22.vmware"
+@vm.ip    = "192.168.200.72"
+@vm.users = "tanaka"
+
+@vm.save
+
+@vm = Vm.new
+@vm.title = "e44.vmware"
+@vm.ip    = "192.168.200.84"
+@vm.users = "yamada"
+@vm.save
        
 
 
