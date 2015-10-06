@@ -1,0 +1,40 @@
+
+<%= form_for @vm do |f| %>
+ドメイン
+  <%= f.text_field :title %><br>
+  <%= @vm.errors.messages[:title][0] %>  
+<br> 
+IP
+  <%= f.text_field :ip %> <br>
+  <%= @vm.errors.messages[:ip][0] %>  
+<br>
+利用者
+  <%= f.text_field :users %><br>
+<%= @vm.errors.messages[:users][0] %>  
+<br>
+備考
+  <%= f.text_area :memo %>
+<%= @vm.errors.messages[:memo][0] %>
+
+<br>
+  <%= f.submit %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
